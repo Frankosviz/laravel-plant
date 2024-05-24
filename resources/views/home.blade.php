@@ -4,7 +4,8 @@
 
 @section('content')
 <main>
-    <h1>Plants</h1>
+    
+
     <div class="d-flex flex-wrap ms-3 me-3">
         @foreach ($plants as $plant)
         <div class="card" style="width: 18rem;">
