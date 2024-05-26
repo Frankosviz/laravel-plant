@@ -3,17 +3,17 @@
 @section('title', 'Home')
 
 @section('content')
-<main>
+<main class="f-d-card-bg">
     
 
-    <div class="d-flex flex-wrap ms-3 me-3">
+    <div class="d-flex flex-wrap mx-3">
         @foreach ($plants as $plant)
-        <div class="card" style="width: 18rem;">
-            <img src="{{ $plant-> img }}" class="card-img-top" alt="{{ $plant-> common_name }}">
-            <div class="card-body">
-            <h5 class="card-title">{{ $plant-> common_name }} ({{ $plant-> scientific_name }})</h5>
-            <p class="card-text">{{ $plant-> family }}</p>
-            <a href="#" class="btn btn-primary">Details</a>
+        <div class="card f-d-card">
+            <img src="{{ $plant-> img }}" class="f-d-card-img img-fluid" alt="{{ $plant-> common_name }}">
+            <div class="f-d-card-body">
+            <h5 class="f-d-card-title">{{ $plant-> common_name }} ({{ $plant-> scientific_name }})</h5>
+            <p class="f-d-card-text">{{ $plant-> family }}</p>
+            <a href="#" class="btn f-d-button">Details</a>
             </div>
         </div>
         @endforeach
